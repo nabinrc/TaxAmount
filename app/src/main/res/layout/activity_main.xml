@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTaxamount"
+        style="@style/content"
+        android:text="Please Enter Your Monthly Income:"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:id="@+id/etTaxamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvTaxamount"
+        android:layout_marginTop="100dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/content"
+        android:layout_below="@+id/etTaxamount"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        />
+    <Button
+        android:id="@+id/btnTaxamount"
+        style="@style/content"
+        android:text="Calculate my Tax"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>
